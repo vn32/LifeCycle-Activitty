@@ -1,0 +1,1 @@
+# MyAndroidApp - Activity Lifecycle in android app.
