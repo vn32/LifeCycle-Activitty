@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onStart");
         super.onStart();
 //        askPermission();
-        checkLoginStatus();
+        //checkLoginStatus();
+        checkWeatherStatus();
     }
 
     @Override
@@ -42,12 +43,15 @@ public class MainActivity extends AppCompatActivity {
     public void onPause() {
         Log.d(TAG, "onPause");
         super.onPause();
+        //to pause video like utube add method here
     }
 
     @Override
     public void onStop() {
         Log.d(TAG, "onStop");
         super.onStop();
+        LoggedIn=false;
+
     }
 
     @Override
@@ -65,13 +69,15 @@ public class MainActivity extends AppCompatActivity {
 //        Log.d(TAG, "askPermission");
 //
 //    }
-    void checkLoginStatus() {
-        if(LoggedIn){
-            Log.d(TAG, "LoggedIn");
-        } else {
-            Log.d(TAG, "LoggedOut");
-        }
-
+//    void checkLoginStatus() {
+//        if(LoggedIn){
+//            Log.d(TAG, "LoggedIn");
+//        } else {
+//            Log.d(TAG, "LoggedOut");
+//        }
+//    }
+    void checkWeatherStatus() {
+        Log.d(TAG, "checkweatherstatus");
 
     }
 
