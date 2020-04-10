@@ -53,4 +53,10 @@ public class SecondActivity extends AppCompatActivity {
         Log.d(TAG, "onRestart");
         super.onRestart();
     }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy");
+        super.onDestroy();
+    }
 }

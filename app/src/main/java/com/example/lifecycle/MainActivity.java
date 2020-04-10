@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         Log.d(TAG, "onStart");
         super.onStart();
+        askPermission();
     }
 
     @Override
@@ -52,4 +53,16 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onRestart");
         super.onRestart();
     }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy");
+        super.onDestroy();
+    }
+    void askPermission() {
+        Log.d(TAG, "askPermission");
+
+    }
+
+
 }
