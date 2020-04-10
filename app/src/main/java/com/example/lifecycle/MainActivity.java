@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     String TAG = "MainActivityLog";
+    boolean LoggedIn=true;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
@@ -27,7 +28,8 @@ public class MainActivity extends AppCompatActivity {
     public void onStart() {
         Log.d(TAG, "onStart");
         super.onStart();
-        askPermission();
+//        askPermission();
+        checkLoginStatus();
     }
 
     @Override
@@ -59,8 +61,17 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onDestroy");
         super.onDestroy();
     }
-    void askPermission() {
-        Log.d(TAG, "askPermission");
+//    void askPermission() {
+//        Log.d(TAG, "askPermission");
+//
+//    }
+    void checkLoginStatus() {
+        if(LoggedIn){
+            Log.d(TAG, "LoggedIn");
+        } else {
+            Log.d(TAG, "LoggedOut");
+        }
+
 
     }
 
